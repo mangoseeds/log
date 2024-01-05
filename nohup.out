@@ -1,0 +1,340 @@
+[W 2024-01-05 02:03:40.556 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2024-01-05 02:03:40.564 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-01-05 02:03:40.565 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-01-05 02:03:40.568 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-01-05 02:03:40.573 ServerApp] notebook_dir is deprecated, use root_dir
+[W 2024-01-05 02:03:40.573 ServerApp] jupyterlab | error linking extension: No such directory: ''C:/Users/USER/jupyterlab_root/''
+    Traceback (most recent call last):
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 345, in link_extension
+        extension.link_all_points(self.serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 227, in link_all_points
+        self.link_point(point_name, serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 217, in link_point
+        point.link(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 139, in link
+        linker(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\application.py", line 411, in _link_jupyter_server_extension
+        self.serverapp.update_config(self.config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 244, in update_config
+        self._load_config(config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 179, in _load_config
+        with self.hold_trait_notifications():
+      File "C:\Users\user\miniconda3\Lib\contextlib.py", line 144, in __exit__
+        next(self.gen)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1510, in hold_trait_notifications
+        self.notify_change(change)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1525, in notify_change
+        return self._notify_observers(change)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1568, in _notify_observers
+        c(event)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1648, in _update_notebook_dir
+        self.root_dir = change["new"]
+        ^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 716, in __set__
+        self.set(obj, value)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 690, in set
+        new_value = self._validate(obj, value)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 724, in _validate
+        value = self._cross_validate(obj, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 730, in _cross_validate
+        value = obj._trait_validators[self.name](obj, proposal)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1241, in __call__
+        return self.func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1698, in _root_dir_validate
+        raise TraitError(trans.gettext("No such directory: '%r'") % value)
+    traitlets.traitlets.TraitError: No such directory: ''C:/Users/USER/jupyterlab_root/''
+[I 2024-01-05 02:03:40.579 ServerApp] notebook | extension was successfully linked.
+[I 2024-01-05 02:03:40.791 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-01-05 02:03:40.821 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-01-05 02:03:40.823 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-01-05 02:03:40.823 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-01-05 02:03:40.825 LabApp] JupyterLab extension loaded from C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyterlab
+[I 2024-01-05 02:03:40.825 LabApp] JupyterLab application directory is C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\share\jupyter\lab
+[I 2024-01-05 02:03:40.825 LabApp] Extension Manager is 'pypi'.
+[I 2024-01-05 02:03:40.827 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-01-05 02:03:40.829 ServerApp] notebook | extension was successfully loaded.
+[I 2024-01-05 02:03:40.829 ServerApp] Serving notebooks from local directory: C:\Users\user\Documents\EWHA\log\log
+[I 2024-01-05 02:03:40.829 ServerApp] Jupyter Server 2.12.1 is running at:
+[I 2024-01-05 02:03:40.829 ServerApp] http://222.107.147.71:8888/lab?token=c8e8fbe9168eb6edc0234b2b69d01e6ed9d0e0f1b9cfad1a
+[I 2024-01-05 02:03:40.829 ServerApp]     http://127.0.0.1:8888/lab?token=c8e8fbe9168eb6edc0234b2b69d01e6ed9d0e0f1b9cfad1a
+[I 2024-01-05 02:03:40.829 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-01-05 02:03:40.852 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/user/AppData/Roaming/jupyter/runtime/jpserver-18288-open.html
+    Or copy and paste one of these URLs:
+        http://222.107.147.71:8888/lab?token=c8e8fbe9168eb6edc0234b2b69d01e6ed9d0e0f1b9cfad1a
+        http://127.0.0.1:8888/lab?token=c8e8fbe9168eb6edc0234b2b69d01e6ed9d0e0f1b9cfad1a
+[I 2024-01-05 02:03:41.397 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2024-01-05 02:03:43.899 LabApp] Build is up to date
+[I 2024-01-05 02:04:00.862 ServerApp] Interrupted...
+[W 2024-01-05 02:04:21.258 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2024-01-05 02:04:21.266 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-01-05 02:04:21.266 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-01-05 02:04:21.270 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-01-05 02:04:21.274 ServerApp] notebook_dir is deprecated, use root_dir
+[W 2024-01-05 02:04:21.274 ServerApp] jupyterlab | error linking extension: No such directory: ''C:/Users/USER/jupyterlab_root/''
+    Traceback (most recent call last):
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 345, in link_extension
+        extension.link_all_points(self.serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 227, in link_all_points
+        self.link_point(point_name, serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 217, in link_point
+        point.link(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 139, in link
+        linker(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\application.py", line 411, in _link_jupyter_server_extension
+        self.serverapp.update_config(self.config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 244, in update_config
+        self._load_config(config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 179, in _load_config
+        with self.hold_trait_notifications():
+      File "C:\Users\user\miniconda3\Lib\contextlib.py", line 144, in __exit__
+        next(self.gen)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1510, in hold_trait_notifications
+        self.notify_change(change)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1525, in notify_change
+        return self._notify_observers(change)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1568, in _notify_observers
+        c(event)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1648, in _update_notebook_dir
+        self.root_dir = change["new"]
+        ^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 716, in __set__
+        self.set(obj, value)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 690, in set
+        new_value = self._validate(obj, value)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 724, in _validate
+        value = self._cross_validate(obj, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 730, in _cross_validate
+        value = obj._trait_validators[self.name](obj, proposal)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1241, in __call__
+        return self.func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1698, in _root_dir_validate
+        raise TraitError(trans.gettext("No such directory: '%r'") % value)
+    traitlets.traitlets.TraitError: No such directory: ''C:/Users/USER/jupyterlab_root/''
+[I 2024-01-05 02:04:21.280 ServerApp] notebook | extension was successfully linked.
+[I 2024-01-05 02:04:21.479 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-01-05 02:04:21.510 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-01-05 02:04:21.512 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-01-05 02:04:21.512 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-01-05 02:04:21.513 LabApp] JupyterLab extension loaded from C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyterlab
+[I 2024-01-05 02:04:21.513 LabApp] JupyterLab application directory is C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\share\jupyter\lab
+[I 2024-01-05 02:04:21.513 LabApp] Extension Manager is 'pypi'.
+[I 2024-01-05 02:04:21.514 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-01-05 02:04:21.517 ServerApp] notebook | extension was successfully loaded.
+[I 2024-01-05 02:04:21.517 ServerApp] Serving notebooks from local directory: C:\Users\user\Documents\EWHA\log\log
+[I 2024-01-05 02:04:21.517 ServerApp] Jupyter Server 2.12.1 is running at:
+[I 2024-01-05 02:04:21.517 ServerApp] http://222.107.147.71:8888/lab?token=94f6f0ea1b85e705ba10786e52f1b18023818cb5bfabb584
+[I 2024-01-05 02:04:21.517 ServerApp]     http://127.0.0.1:8888/lab?token=94f6f0ea1b85e705ba10786e52f1b18023818cb5bfabb584
+[I 2024-01-05 02:04:21.517 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-01-05 02:04:21.538 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/user/AppData/Roaming/jupyter/runtime/jpserver-18028-open.html
+    Or copy and paste one of these URLs:
+        http://222.107.147.71:8888/lab?token=94f6f0ea1b85e705ba10786e52f1b18023818cb5bfabb584
+        http://127.0.0.1:8888/lab?token=94f6f0ea1b85e705ba10786e52f1b18023818cb5bfabb584
+[I 2024-01-05 02:04:22.082 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2024-01-05 02:04:24.741 LabApp] Build is up to date
+[I 2024-01-05 02:06:28.246 LabApp] Build is up to date
+[I 2024-01-05 02:06:39.285 LabApp] Build is up to date
+[I 2024-01-05 02:06:49.084 LabApp] Build is up to date
+[I 2024-01-05 02:07:55.653 LabApp] Build is up to date
+[I 2024-01-05 02:09:29.546 LabApp] Build is up to date
+[I 2024-01-05 02:09:41.787 ServerApp] Saving file at /web/flask-server/test.txt
+[I 2024-01-05 02:09:46.692 LabApp] Build is up to date
+[I 2024-01-05 02:09:56.680 ServerApp] 302 GET / (@106.75.185.127) 0.98ms
+[I 2024-01-05 02:10:14.782 LabApp] 302 GET /lab? (@106.75.185.127) 1.00ms
+[I 2024-01-05 02:10:16.271 LabApp] Build is up to date
+[I 2024-01-05 02:10:19.058 LabApp] Build is up to date
+[I 2024-01-05 02:10:30.046 ServerApp] Saving file at /web/flask-server/test.txt
+[I 2024-01-05 02:10:59.311 LabApp] Build is up to date
+ed, use root_dir
+[W 2024-01-05 02:06:15.776 ServerApp] jupyterlab | error linking extension: No such directory: ''C:/Users/USER/jupyterlab_root/''
+    Traceback (most recent call last):
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 345, in link_extension
+        extension.link_all_points(self.serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 227, in link_all_points
+        self.link_point(point_name, serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 217, in link_point
+        point.link(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 139, in link
+        linker(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\application.py", line 411, in _link_jupyter_server_extension
+        self.serverapp.update_config(self.config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 244, in update_config
+        self._load_config(config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 179, in _load_config
+        with self.hold_trait_notifications():
+      File "C:\Users\user\miniconda3\Lib\contextlib.py", line 144, in __exit__
+        next(self.gen)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1510, in hold_trait_notifications
+        self.notify_change(change)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1525, in notify_change
+        return self._notify_observers(change)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1568, in _notify_observers
+        c(event)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1648, in _update_notebook_dir
+        self.root_dir = change["new"]
+        ^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 716, in __set__
+        self.set(obj, value)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 690, in set
+        new_value = self._validate(obj, value)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 724, in _validate
+        value = self._cross_validate(obj, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 730, in _cross_validate
+        value = obj._trait_validators[self.name](obj, proposal)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1241, in __call__
+        return self.func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1698, in _root_dir_validate
+        raise TraitError(trans.gettext("No such directory: '%r'") % value)
+    traitlets.traitlets.TraitError: No such directory: ''C:/Users/USER/jupyterlab_root/''
+[I 2024-01-05 02:06:15.782 ServerApp] notebook | extension was successfully linked.
+[I 2024-01-05 02:06:15.991 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-01-05 02:06:16.022 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-01-05 02:06:16.023 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-01-05 02:06:16.024 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-01-05 02:06:16.025 LabApp] JupyterLab extension loaded from C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyterlab
+[I 2024-01-05 02:06:16.025 LabApp] JupyterLab application directory is C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\share\jupyter\lab
+[I 2024-01-05 02:06:16.026 LabApp] Extension Manager is 'pypi'.
+[I 2024-01-05 02:06:16.027 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-01-05 02:06:16.030 ServerApp] notebook | extension was successfully loaded.
+[I 2024-01-05 02:06:16.030 ServerApp] The port 8888 is already in use, trying another port.
+[I 2024-01-05 02:06:16.030 ServerApp] Serving notebooks from local directory: C:\Users\user\Documents\EWHA\log\log
+[I 2024-01-05 02:06:16.030 ServerApp] Jupyter Server 2.12.1 is running at:
+[I 2024-01-05 02:06:16.030 ServerApp] http://222.107.147.71:8889/lab?token=9fb1aef943e2c2789625778b3e3ed0807572f93220780b7a
+[I 2024-01-05 02:06:16.030 ServerApp]     http://127.0.0.1:8889/lab?token=9fb1aef943e2c2789625778b3e3ed0807572f93220780b7a
+[I 2024-01-05 02:06:16.030 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-01-05 02:06:16.053 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/user/AppData/Roaming/jupyter/runtime/jpserver-18032-open.html
+    Or copy and paste one of these URLs:
+        http://222.107.147.71:8889/lab?token=9fb1aef943e2c2789625778b3e3ed0807572f93220780b7a
+        http://127.0.0.1:8889/lab?token=9fb1aef943e2c2789625778b3e3ed0807572f93220780b7a
+[I 2024-01-05 02:06:16.613 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2024-01-05 02:06:19.159 LabApp] Build is up to date
+[W 2024-01-05 19:46:08.694 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2024-01-05 19:46:08.741 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-01-05 19:46:08.741 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-01-05 19:46:08.756 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-01-05 19:46:08.756 ServerApp] notebook_dir is deprecated, use root_dir
+[W 2024-01-05 19:46:08.756 ServerApp] jupyterlab | error linking extension: No such directory: ''C:/Users/USER/jupyterlab_root/''
+    Traceback (most recent call last):
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 345, in link_extension
+        extension.link_all_points(self.serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 227, in link_all_points
+        self.link_point(point_name, serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 217, in link_point
+        point.link(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\manager.py", line 139, in link
+        linker(serverapp)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\extension\application.py", line 411, in _link_jupyter_server_extension
+        self.serverapp.update_config(self.config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 244, in update_config
+        self._load_config(config)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\config\configurable.py", line 179, in _load_config
+        with self.hold_trait_notifications():
+      File "C:\Users\user\miniconda3\Lib\contextlib.py", line 144, in __exit__
+        next(self.gen)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1510, in hold_trait_notifications
+        self.notify_change(change)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1525, in notify_change
+        return self._notify_observers(change)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1568, in _notify_observers
+        c(event)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1648, in _update_notebook_dir
+        self.root_dir = change["new"]
+        ^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 716, in __set__
+        self.set(obj, value)
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 690, in set
+        new_value = self._validate(obj, value)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 724, in _validate
+        value = self._cross_validate(obj, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 730, in _cross_validate
+        value = obj._trait_validators[self.name](obj, proposal)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\traitlets\traitlets.py", line 1241, in __call__
+        return self.func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyter_server\serverapp.py", line 1698, in _root_dir_validate
+        raise TraitError(trans.gettext("No such directory: '%r'") % value)
+    traitlets.traitlets.TraitError: No such directory: ''C:/Users/USER/jupyterlab_root/''
+[I 2024-01-05 19:46:08.803 ServerApp] notebook | extension was successfully linked.
+[I 2024-01-05 19:46:09.090 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-01-05 19:46:09.137 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-01-05 19:46:09.137 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-01-05 19:46:09.137 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-01-05 19:46:09.137 LabApp] JupyterLab extension loaded from C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\Lib\site-packages\jupyterlab
+[I 2024-01-05 19:46:09.137 LabApp] JupyterLab application directory is C:\Users\user\Documents\EWHA\log\log\web\flask-server\venv\share\jupyter\lab
+[I 2024-01-05 19:46:09.137 LabApp] Extension Manager is 'pypi'.
+[I 2024-01-05 19:46:09.137 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-01-05 19:46:09.137 ServerApp] notebook | extension was successfully loaded.
+[I 2024-01-05 19:46:09.137 ServerApp] Serving notebooks from local directory: C:\Users\user\Documents\EWHA\log\log
+[I 2024-01-05 19:46:09.137 ServerApp] Jupyter Server 2.12.1 is running at:
+[I 2024-01-05 19:46:09.137 ServerApp] http://222.107.147.71:8888/lab?token=947578f358659fd94aaf9e5963e6af1fdcc010ce87138b3f
+[I 2024-01-05 19:46:09.137 ServerApp]     http://127.0.0.1:8888/lab?token=947578f358659fd94aaf9e5963e6af1fdcc010ce87138b3f
+[I 2024-01-05 19:46:09.137 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-01-05 19:46:09.184 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///C:/Users/user/AppData/Roaming/jupyter/runtime/jpserver-16260-open.html
+    Or copy and paste one of these URLs:
+        http://222.107.147.71:8888/lab?token=947578f358659fd94aaf9e5963e6af1fdcc010ce87138b3f
+        http://127.0.0.1:8888/lab?token=947578f358659fd94aaf9e5963e6af1fdcc010ce87138b3f
+[I 2024-01-05 19:46:09.854 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2024-01-05 19:46:12.669 LabApp] Build is up to date
+[I 2024-01-05 20:22:11.270 LabApp] 302 GET /lab (@222.107.147.241) 0.00ms
+[I 2024-01-05 20:22:12.099 LabApp] Build is up to date
+[I 2024-01-05 20:23:53.670 LabApp] Build is up to date
+[I 2024-01-05 20:24:05.836 LabApp] Build is up to date
+[I 2024-01-05 23:29:54.022 ServerApp] 302 GET / (@178.32.197.95) 0.00ms
+[I 2024-01-06 00:19:07.332 LabApp] Build is up to date
+[I 2024-01-06 00:23:56.096 ServerApp] 302 GET / (@167.94.146.51) 0.00ms
+[I 2024-01-06 00:23:59.668 ServerApp] 302 GET / (@167.94.146.51) 0.00ms
+[I 2024-01-06 00:24:00.242 ServerApp] Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2024-01-06 00:24:03.846 LabApp] 302 GET /lab (@167.94.146.51) 2.00ms
+[I 2024-01-06 00:24:04.429 ServerApp] Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2024-01-06 00:24:08.667 ServerApp] Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2024-01-06 00:59:39.222 LabApp] Build is up to date
+[W 2024-01-06 00:59:39.318 ServerApp] 404 GET /api/contents/web/flask-server/test.py?content=0&1704470378948 (3b1204110d84481896c133641c84ebfb@222.107.147.241) 0.00ms referer=http://222.107.147.71:8888/lab/workspaces/auto-A/tree/web/flask-server/test.py
+[W 2024-01-06 00:59:39.318 ServerApp] 404 GET /api/contents/web/flask-server/test.py?content=0&1704470378948 (222.107.147.241): No such file or directory: web/flask-server/test.py
+[W 2024-01-06 00:59:40.039 ServerApp] 404 GET /api/contents/web/flask-server/test.py?content=0&1704470379666 (3b1204110d84481896c133641c84ebfb@222.107.147.241) 0.00ms referer=http://222.107.147.71:8888/lab/workspaces/auto-A/tree/web/flask-server/test.py
+[W 2024-01-06 00:59:40.039 ServerApp] 404 GET /api/contents/web/flask-server/test.py?content=0&1704470379666 (222.107.147.241): No such file or directory: web/flask-server/test.py
